@@ -1,0 +1,17 @@
+﻿<Window x:Class="PrismWSEchoSample.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:prism="http://prismlibrary.com/"
+        prism:ViewModelLocator.AutoWireViewModel="True"
+        Title="{Binding Title}" Height="350" Width="525">
+    <StackPanel>
+        <TextBox Text="{Binding WSEndPoint}"></TextBox>
+        <TextBox Text="{Binding Status}"></TextBox>
+        <TextBox Text="{Binding SendWord}"></TextBox>
+        <TextBox Text="{Binding SendMessage}"></TextBox>
+        <TextBox Text="{Binding ReceivedMessage}"></TextBox>
+        <Button Command="{Binding ConnectCommand}">Connect</Button>
+        <Button Command="{Binding SendCommand}">Send</Button>
+        <Button Command="{Binding DisconnectCommand}">Disconnect</Button>
+    </StackPanel>
+</Window>
